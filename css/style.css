@@ -147,6 +147,10 @@ footer {
     display: flex;
     gap: 32px;
 }
+.footer-contact a{
+    display: flex;
+    align-items: center;
+}
 
 .footer-icons {
     display: flex;
@@ -157,7 +161,6 @@ footer {
     display: flex;
     align-items: center;
     gap: 4px;
-
 }
 
 .footer-location p {
@@ -166,10 +169,15 @@ footer {
     font-weight: 500;
     color: #EBEBEB;
 }
+
 .footer-number {
     display: flex;
     align-items: center;
-    gap: 4px;
+}
+.footer-number a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .footer-number a {
     font-family: 'Inter';
@@ -179,27 +187,20 @@ footer {
 }
 
 .footer-line {
-    height: 42px;
+    height: 36px;
     width: 2px;
     background-color: #fff;
 }
 
-.footer-number a::after{
-    content: '';
-    width: 0;
-    height: 2px;
-    background-color: #FFFFFF;
-    display: block;
-    margin: auto;
-    transition: 0.5s;  
-}
-.footer-number a:hover{
-    font-weight: 500; 
-}
+.footer-icons a svg{transition:0.3s}
+.footer-icons a:hover > svg circle{stroke:#099ed0}
+.footer-icons a:hover > svg path {fill:#099ed0}
+.footer-location:hover > svg path {fill:#099ed0}
+.footer-location:hover > p {color:#099ed0}
+.footer-number a:hover > svg path {fill: #099ed0}
+.footer-number a:hover > p {color: #099ed0}
 
-.footer-number a:hover::after{
-    width: 100%;
-}
+
 
 @media (max-width: 1180px) {
     footer {
@@ -209,7 +210,7 @@ footer {
         flex-direction: column;
         gap: 28px;
     }
-    .footer-icons img {
+    .footer-icons a svg {
         width: 35px;
     }
     .footer-line {
@@ -217,7 +218,7 @@ footer {
         height: 2px;
         background-color: #fff;
     }
-    .footer-number a {
+    .footer-number a p{
         font-size: 18px;
     }
     .footer-location p {
@@ -263,14 +264,14 @@ footer {
     .footer-copyRight p{
         font-size: 14px;
     }
-    .footer-icons img{
+    .footer-icons a svg {
         width: 30px;
     }
-    .footer-location img {
+    .footer-location svg {
         width: 24px;
     }
-    .footer-number img {
-        width: 24px;
+    .footer-number a svg {
+        width: 15px;
     }
     .footer-line {
         width: 182px;
@@ -278,7 +279,7 @@ footer {
     .footer-location p {
         font-size: 14px;
     }
-    .footer-number a {
+    .footer-number a p {
         font-size: 14px;
     }
 }
