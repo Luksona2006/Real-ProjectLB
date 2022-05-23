@@ -184,6 +184,23 @@ footer {
     background-color: #fff;
 }
 
+.footer-number a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;  
+}
+.footer-number a:hover{
+    font-weight: 500; 
+}
+
+.footer-number a:hover::after{
+    width: 100%;
+}
+
 @media (max-width: 1180px) {
     footer {
         margin-top: 150px;
