@@ -33,8 +33,12 @@ body {
     gap: 58px;
     align-items: center;
 }
-.loading-keyframe {
+.Loading-big{
     animation: spin 5s linear infinite;
+}
+.Loading-small{
+    animation: spin 5s linear infinite;
+    animation-direction: reverse;
 }
 .construction h1 {
     width: 767px;
@@ -46,11 +50,13 @@ body {
     color: #1C3144;
 }
 
-.construction p {
+.done-sms {
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 400;
     color: #686767;
+    text-align: center;
+    line-height: 120%;
 }
 @media (max-width: 1180px) {
     .construction h1 {
@@ -58,7 +64,7 @@ body {
         font-size: 75px;
         line-height: 83px;
     }
-    .construction p {
+    .done-sms {
         font-size: 18px; 
     }
     .Loading-big {
