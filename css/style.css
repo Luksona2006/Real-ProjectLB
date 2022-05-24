@@ -177,7 +177,7 @@ footer {
 .footer-number a {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
 }
 .footer-number a {
     font-family: 'Inter';
