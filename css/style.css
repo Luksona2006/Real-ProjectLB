@@ -9,6 +9,7 @@
 body {
     background: rgba(198, 221, 240, 0.32);
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /*  NAVIGATION */
@@ -96,7 +97,19 @@ body {
         font-size: 45px;
         line-height: 49px;
     }
-
+}
+@media (max-width: 400px) {
+    .construction h1 {
+        width: 324px;
+        font-size: 41px;
+        line-height: 45px;
+    }
+    .Loading-big {
+        width: 80px;
+    }
+    .Loading-small {
+        width: 60px
+    }
 }
 
 @keyframes spin {
