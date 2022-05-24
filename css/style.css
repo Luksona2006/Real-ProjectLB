@@ -192,7 +192,24 @@ footer {
     background-color: #fff;
 }
 
-.footer-icons a svg{transition:0.3s}
+.footer-icons a svg path{
+    transition:0.3s
+}
+.footer-icons a svg circle{
+    transition:0.3s
+}
+.footer-location svg path{
+    transition:0.3s
+}
+.footer-location p {
+    transition:0.3s
+}
+.footer-number a svg path {
+    transition:0.3s
+}
+.footer-number a p {
+    transition:0.3s
+}
 .footer-icons a:hover > svg circle{stroke:#099ed0}
 .footer-icons a:hover > svg path {fill:#099ed0}
 .footer-location:hover > svg path {fill:#099ed0}
