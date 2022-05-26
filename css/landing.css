@@ -221,10 +221,10 @@ body {
         top: 144px;
         left: 50%;
         transform: translate(-50%, 200px);
-        padding: 15px 40px;
+        padding: 12px 44px;
         background-color: #061A40;
         border-radius: 20px;
-        font-size: 16px;
+        font-size: 14px;
         color: #f5f6f7dc;
         font-weight: 600;
         -moz-transition: all .4s ease-in-out;
