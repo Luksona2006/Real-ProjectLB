@@ -203,6 +203,9 @@ html {
 .fa-xmark {
     display: none;
 }
+.ul-newsli {
+    display: none;
+}
 
 @media(max-width: 1265px) {
     .nav-wraper ul {
@@ -631,10 +634,9 @@ html {
     .skyblue-button {
         padding: 16px 48px;
         font-size: 16px;
-    }
-    
-
+    } 
 }
+
 @media (max-width: 560px) {
     .slide:nth-child(1) {
         padding: 45px 0 35px 68px;
@@ -1045,6 +1047,20 @@ html {
     .feedback-section {
         flex-direction: column;
         gap: 34px;
+    }
+
+    .feedback-section h2 {
+        font-family: 'Gilroy-Black';
+        font-size: 48px;
+        color: #FFFFFF;
+
+    }
+
+    .feedback-section p {
+        font-family: 'Gilroy-SemiBold';
+        font-size: 20px;
+        text-align: center;
+        color: #12CBF3;
     }
 
     .feedback-line {
