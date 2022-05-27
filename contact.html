@@ -126,52 +126,52 @@
                     <h2>
                         Contact us
                     </h2>
-                    <div class="contact-us">
+                    <form onsubmit="senEmail(); reset(); return false;" class="contact-us">
                         <div class="name-lastname">
                             <div>
                                 <h4>Name</h4>
-                                <input type="text" placeholder="Name" required>
+                                <input id="name" type="text" placeholder="Name" required>
                             </div>         
                             <div>
                                 <h4>Last Name</h4>
-                                <input type="text" placeholder="Last Name" required>
+                                <input id="lastName" type="text" placeholder="Last Name" required>
                             </div>
                         </div>
                         <div class="mail-phone">
                             <div>
                                 <h4>Email</h4>
-                                <input type="email" placeholder="Email" required>
+                                <input id="email" type="email" placeholder="Email" required>
                             </div>
                             <div>
                                 <h4>Phone</h4>
-                                <input type="number" placeholder="Number" required>
+                                <input id="number" type="number" placeholder="Number" required>
                             </div>
                         </div>
                         <div class="date-datetime">
                             <div>
                                 <h4>Date</h4>
-                                <input type="date" placeholder="MM/DD/YY" required>
+                                <input id="date" type="date" placeholder="MM/DD/YY" required>
                             </div>
                             <div>
                                 <h4>Time</h4>
-                                <input type="time" placeholder="HH-MM" required>
+                                <input id="time" id="time" type="time" placeholder="HH-MM" required>
                             </div>
                         </div>
                         <div class="message">
                             <div>
                                 <h4>Message</h4>
-                                <input type="text" placeholder="Write your message here...." required>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here...."></textarea>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="contactUs-button">
-                    <button>
-                        Send <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.7832 0.21751C17.682 0.116765 17.5541 0.0470131 17.4146 0.0164552C17.2751 -0.0141027 17.1298 -0.0041961 16.9957 0.0450103L0.495733 6.04501C0.353434 6.09898 0.230923 6.19497 0.144471 6.32023C0.0580196 6.44548 0.0117188 6.59407 0.0117188 6.74626C0.0117188 6.89845 0.0580196 7.04704 0.144471 7.17229C0.230923 7.29755 0.353434 7.39354 0.495733 7.44751L7.69573 10.3275L10.5757 17.5275C10.6298 17.6636 10.7226 17.7808 10.8425 17.8648C10.9625 17.9487 11.1044 17.9957 11.2507 18C11.4023 17.9969 11.5494 17.9479 11.6725 17.8596C11.7957 17.7712 11.8892 17.6476 11.9407 17.505L17.9407 1.00501C17.9918 0.872318 18.0042 0.727833 17.9763 0.588403C17.9484 0.448973 17.8814 0.320343 17.7832 0.21751ZM11.2507 15.15L9.15823 9.90001L12.7507 6.30751L11.6932 5.25001L8.07073 8.87251L2.85073 6.75001L15.9982 2.00251L11.2507 15.15Z" fill="#039ED6"/>
-                            </svg>
-                            
-                    </button>
+                    <div class="contactUs-button">
+                        <button>
+                            Send <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.7832 0.21751C17.682 0.116765 17.5541 0.0470131 17.4146 0.0164552C17.2751 -0.0141027 17.1298 -0.0041961 16.9957 0.0450103L0.495733 6.04501C0.353434 6.09898 0.230923 6.19497 0.144471 6.32023C0.0580196 6.44548 0.0117188 6.59407 0.0117188 6.74626C0.0117188 6.89845 0.0580196 7.04704 0.144471 7.17229C0.230923 7.29755 0.353434 7.39354 0.495733 7.44751L7.69573 10.3275L10.5757 17.5275C10.6298 17.6636 10.7226 17.7808 10.8425 17.8648C10.9625 17.9487 11.1044 17.9957 11.2507 18C11.4023 17.9969 11.5494 17.9479 11.6725 17.8596C11.7957 17.7712 11.8892 17.6476 11.9407 17.505L17.9407 1.00501C17.9918 0.872318 18.0042 0.727833 17.9763 0.588403C17.9484 0.448973 17.8814 0.320343 17.7832 0.21751ZM11.2507 15.15L9.15823 9.90001L12.7507 6.30751L11.6932 5.25001L8.07073 8.87251L2.85073 6.75001L15.9982 2.00251L11.2507 15.15Z" fill="#039ED6"/>
+                                </svg>
+                                
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -293,6 +293,26 @@
             navLinks.style.right = "-200px";
         }
 
+    </script>
+
+    <script src="Include a script tag to https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function senEmail() {
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "username",
+            Password : "password",
+            To : 'them@website.com',
+            From : document.getElementById("email").value,
+            Subject : "This is the subject",
+            Body : "Name" + document.getElementById("name").value 
+                + "<br> Email:"  + document.getElementById("email").value 
+                + "<br> Phone:"  + document.getElementById("number").value
+                + "<br> Message:"  + document.getElementById("message").value
+            }).then(
+            message => alert("Message Sent Succesfully")
+            );
+        }
     </script>
 
 </body>

@@ -384,13 +384,19 @@ html {
     
 }
 
-.message input {
+.message textarea {
     border: 1px solid rgba(13, 40, 91, 0.4);
     border-radius: 8px;
     width: 100%;
-    height: 180px;
-    padding: 0 24px 0 16px;
+    padding: 15px 24px 0 16px;
     color: rgb(60, 84, 129);
+}
+.message textarea::placeholder {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(60, 84, 129, 0.64);
 }
 
 .contactus-wraper h4{
@@ -408,11 +414,6 @@ input::placeholder {
     font-size: 16px;
     color: rgba(60, 84, 129, 0.64);
 }
-
-.message input::placeholder {
-    vertical-align: top;
-}
-
 
 .contactUs-button {
     margin: auto;
@@ -463,6 +464,9 @@ input::placeholder {
         font-size: 16px;
     }
     input::placeholder {
+        font-size: 12px;
+    }
+    .message textarea::placeholder {
         font-size: 12px;
     }
     .contactUs-button button{
