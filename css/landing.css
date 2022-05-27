@@ -233,40 +233,6 @@ html {
         right: 0;
         
     }
-    .navButton-inMenu button {
-        cursor: pointer;
-        background: #0C2D6C;
-        border-radius: 10px;
-
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        text-align: center;
-        color: #FFFFFF;
-        padding: 16px 20px;
-        margin: 0 16px;
-
-        background-size: 300% 100%;
-
-        -moz-transition: all .4s ease-in-out;
-        -o-transition: all .4s ease-in-out;
-        -webkit-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
-    }
-    .navButton-inMenu button:hover {
-        background-position: 100% 0;
-        -moz-transition: all .4s ease-in-out;
-        -o-transition: all .4s ease-in-out;
-        -webkit-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
-        background-image: linear-gradient(to right, #0b285e, #1a4fb3, #0b285e, #1a4fb3);
-        box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-    }
-    
-    .navButton-inMenu button:focus {
-        outline: none;
-    }
 
     .navButton {
         display: none;
@@ -297,7 +263,8 @@ html {
     }
 
     .nav-links ul li a {
-        font-weight: 600;
+        font-weight: 500;
+        color: #F5F6F7;
         transition: all 0.5s ease-in;
     }
 
