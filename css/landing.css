@@ -1569,9 +1569,11 @@ footer {
         flex-direction: column;
     }
     .footer-mainWraper {
-        flex-direction: column;
-        align-items: center;
-        gap: 80px;
+        gap: 48px;
+    }
+
+    .footer-left {
+        gap: 40px;
     }
 
     .footer-location {
