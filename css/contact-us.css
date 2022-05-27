@@ -340,6 +340,7 @@ html {
 }
 
 .contactus-wraper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 52px;
@@ -366,15 +367,17 @@ html {
 }
 
 .name-lastname div, .mail-phone div, .date-datetime div, .message div{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 8px;
+
 }
 
 .name-lastname input, .mail-phone input, .date-datetime input{
     border: 1px solid rgba(13, 40, 91, 0.4);
     border-radius: 8px;
-    width: 576px;
+    width: 100%;
     height: 52px;
     padding: 0 24px 0 16px;
     color: rgb(60, 84, 129);
@@ -444,6 +447,32 @@ input::placeholder {
 .contactUs-button button:hover {
     color: #FFFFFF;
     background-color: #039ED6;
+}
+
+@media (max-width: 900px) {
+    .name-lastname, .mail-phone , .date-datetime{
+        flex-direction: column;
+    }
+}
+@media (max-width: 720px) {
+    .contactus-wraper h2 {
+        font-size: 40px;
+    }
+    .contactus-wraper h4 {
+        font-size: 16px;
+    }
+    input::placeholder {
+        font-size: 12px;
+    }
+    .contactUs-button button{
+        padding: 12px 76px;
+        font-size: 16px;
+    }
+    .contactUs-button svg {
+        width: 16px;
+        height: 16px;
+    }
+
 }
 
 
