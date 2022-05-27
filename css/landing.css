@@ -778,7 +778,6 @@ html {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 30px;
     text-align: center;
     margin: auto;
 
@@ -790,10 +789,17 @@ html {
     transform: scale(1.1);
 
 }
-
+@media (max-width: 1024px) {
+    .centers-section p {
+        font-size: 16px;
+    }
+}
 @media (max-width: 800px) {
     .centers-section h2 {
         font-size: 36px;
+    }
+    .centers-section p {
+        font-size: 28px;
     }
 
     .centersMain-div {
@@ -803,7 +809,7 @@ html {
     }
 
     .centers-div {
-        width: 80%;
+        width: 60%;
         margin: auto;
     }
 
@@ -818,6 +824,10 @@ html {
 .news-slider {
     display: flex;
     width: 100%;
+}
+
+.news-slider img {
+    border-radius: 20px 20px 0 0;
 }
 
 .news-slider ul {
