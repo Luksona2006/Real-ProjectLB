@@ -1144,20 +1144,27 @@ html {
 @media (max-width: 800px) {
 
     .checkUp-section {
-        padding: 20% 35px 20% 70px;
+        background: url(/image-landing/Checkup-section/background-image1.png);
+        width: 90%;
+        padding: 20%;
         display: flex;
         flex-direction: column;
         gap: 40px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 224px auto;
     }
 
     .checkUp-section h2 {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 40px;
-        max-width: none;
+        text-align: center;
     }
-
+    .checkUp-section a {
+        display: flex;
+        justify-content: center;
+    }
     .checkUp-section button {
-
         padding: 16px 48px;
         gap: 16px;
         font-size: 16px;
@@ -1175,9 +1182,10 @@ html {
     }
 
     .checkUp-section h2 {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 24px;
+        line-height: 32px;
         max-width: none;
+        margin-top: 50px;
     }
 
     .checkUp-section button {
@@ -1213,6 +1221,15 @@ html {
         width: 16px;
     }
 }
+@media (max-width: 480px) {
+    .checkUp-section button {
+        padding: 8px 28px;
+        gap: 8px;
+        font-size: 10.4px;
+        margin-bottom: 15px;
+    }
+
+}
 @media (max-width: 400px) {
     .checkUp-section {
 
@@ -1228,11 +1245,6 @@ html {
         line-height: 24px;
     }
 
-    .checkUp-section button {
-        padding: 8px 28px;
-        gap: 8px;
-        font-size: 10.4px;
-    }
     .checkUp-section svg {
         width: 16px;
     }
@@ -1290,7 +1302,7 @@ footer {
 
 .logo-name p {
     display: flex;
-    
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
