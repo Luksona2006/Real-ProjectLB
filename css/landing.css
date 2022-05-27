@@ -1589,3 +1589,9 @@ footer {
         justify-content: center
     }
 }
+
+@media (max-width: 400px) {
+    .logo-name p, .logo-name span {
+        font-size: 14px;
+    }
+}
