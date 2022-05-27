@@ -167,6 +167,11 @@ html {
     font-weight: 600;
     font-size: 20px;
     color: #061A40;
+    transition: all 0.4s ease-in;
+}
+
+.nav-wraper ul li a:hover {
+    font-size: 22px; 
 }
 
 .navButton-inMenu {
@@ -215,6 +220,10 @@ html {
 
     .nav-wraper ul li a {
         font-size: 16px;
+    }
+    
+    .nav-wraper ul li a:hover {
+        font-size: 17px; 
     }
 
     .navButton button {
