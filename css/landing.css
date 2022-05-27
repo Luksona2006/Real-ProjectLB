@@ -1144,7 +1144,7 @@ html {
 @media (max-width: 800px) {
 
     .checkUp-section {
-        background: url(/image-landing/Checkup-section/background-image1.png);
+        background: url(../image-landing/Checkup-section/background-image1.png);
         width: 90%;
         padding: 20%;
         display: flex;
