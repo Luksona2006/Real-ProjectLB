@@ -25,6 +25,11 @@
     src: url(../Font/Gilroy/Gilroy-Black.ttf);
 }
 
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url(../Font/Gilroy/Gilroy-Light.ttf);
+}
+
 
 .container {
     width: 1600px;
@@ -171,7 +176,7 @@ html {
 }
 
 .nav-wraper ul li a:hover {
-    color: rgba(14, 43, 100, 1);
+    color: rgba(14, 43, 100, 1); 
 }
 
 .navButton-inMenu {
@@ -330,157 +335,185 @@ html {
         width: 16px;
     }
 }
-/* CONTACT US */
 
-.main-wraper {
-    width: 75%;
+/* DEPARTMENTS */
+.departmentMain-wraper {
+    width: 85%;
+    margin: 108px auto 163px auto;
     display: flex;
     flex-direction: column;
-    gap: 52px;
-    margin: 108px auto 288px auto;
+    gap: 128px;
 }
 
-.contactus-wraper {
+.title-search {
+    display: flex;
+    align-items: center;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 52px;
-    margin: auto;
+    justify-content: space-between;
 }
-.contactus-wraper h2{
+
+.title h2 {
     font-family: 'Gilroy-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
-    line-height: 56px;
     color: #0D285B;
 }
 
-.contact-us {
+.search-department {
+    width: 100%;
+    max-width: 442px;
+    background: #EAEFF4;
+    border: 2px solid #039ED6;
+    border-radius: 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search-department input {
+    width: 100%;
+    padding: 20px;
+    width: 100%;
+    border: none;
+
+    font-family: 'Gilroy-Light';
+    font-size: 20px;
+    color: rgba(58, 83, 129, 0.8);
+}
+
+.search-department input:focus {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.button {
+    padding: 0 20px;
+}
+
+.button button {
+    cursor: pointer;
+}
+
+.search-department input::placeholder {
+    font-family: 'Gilroy-Light';
+    font-size: 20px;
+    color: rgba(58, 83, 129, 0.8);
+
+}
+
+.departments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.departments-list1 {
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-.name-lastname, .mail-phone , .date-datetime{
-    display: flex;
-    gap: 44px;
-}
-
-.name-lastname div, .mail-phone div, .date-datetime div, .message div{
-    width: 100%;
+.departments-list2 {
+    width: 45%;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-
+    gap: 32px;
 }
 
-.name-lastname input, .mail-phone input, .date-datetime input{
-    border: 1px solid rgba(13, 40, 91, 0.4);
-    border-radius: 8px;
-    width: 100%;
-    height: 52px;
-    padding: 0 24px 0 16px;
-    color: rgb(60, 84, 129);
-    
+.main-list {
+    display: flex;
+    flex-direction: column;
 }
 
-.message textarea {
-    border: 1px solid rgba(13, 40, 91, 0.4);
-    border-radius: 8px;
-    width: 100%;
-    padding: 15px 24px 0 16px;
-    color: rgb(60, 84, 129);
-}
-.message textarea::placeholder {
-    font-family: 'Gilroy-Medium';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    color: rgba(60, 84, 129, 0.64);
-}
-
-.contactus-wraper h4{
-    font-family: 'Gilroy-Medium';
-    font-size: 18px;
-    line-height: 21px;
-
-    color: #3C5481;
-}
-
-input::placeholder {
-    font-family: 'Gilroy-Medium';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    color: rgba(60, 84, 129, 0.64);
-}
-
-.contactUs-button {
-    margin: auto;
-}
-.contactUs-button button{
-    cursor: pointer;
-
+.list {
+    padding: 24px 16px;
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 16px 96px;
-    border: 2px solid #039ED6;
-    border-radius: 48px;
+    justify-content: space-between;
+    border-bottom: 2px solid #0D285B;
+    transition: 0.3s;
+}
 
+.list p {
     font-family: 'Gilroy-Medium';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-
-    color: #039ED6;
-    transition: 0.4s;
-}
-
-.contactUs-button button:hover>svg path {
-    fill: #FFFFFF;
-    background-color: #039ED6;
+    font-size: 28px;
+    color: #0D285B;
 }
 
 
 
-
-.contactUs-button button:hover {
-    color: #FFFFFF;
-    background-color: #039ED6;
+.line {
+    width: 100%;
+    border: 2px solid #0D285B;
+}
+.departments a{
+  transition: 0.4s;
+}
+.departments a:hover {
+  box-shadow: inset 0 -5.25em 0 0 #0D285B;
 }
 
-@media (max-width: 900px) {
-    .name-lastname, .mail-phone , .date-datetime{
+.departments a:hover p{
+  color: #EBEBEB;
+}
+.departments a:hover svg path{
+    fill: #EBEBEB;
+}
+
+@media (max-width:1024px) {
+    .search-department input::placeholder {
+        font-size: 16px;
+    }
+    .search-department input {
+        padding: 16px;
+        font-size: 16px;
+    }
+    .search-department svg{
+        width: 20px;
+    }
+    .departments {
         flex-direction: column;
+        gap: 40px;
     }
-}
-@media (max-width: 720px) {
-    .contactus-wraper h2 {
-        font-size: 40px;
+    .departments-list1 {
+        width: 100%;
     }
-    .contactus-wraper h4 {
-        font-size: 16px;
+    .departments-list2 {
+        width: 100%;
     }
-    input::placeholder {
-        font-size: 12px;
+
+    .list {
+        padding: 20px 12px;
     }
-    .message textarea::placeholder {
-        font-size: 12px;
+    
+    .list p {
+        font-size: 24px;
     }
-    .contactUs-button button{
-        padding: 12px 76px;
-        font-size: 16px;
+    .list svg{
+        width: 20px;
     }
-    .contactUs-button svg {
-        width: 16px;
-        height: 16px;
-    }
+    
 
 }
 
+@media (max-width:900px) {
+    .title-search {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .search-department {
+        max-width: none;
+    }
+}
+
+@media (max-width:900px) {
+    .title h2 {
+        font-size: 36px;
+    }
+}
 
 
 /* FOOTER */

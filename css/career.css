@@ -171,12 +171,12 @@ html {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    color: #061A40;
+    color: rgba(14, 43, 100, 0.8);
     transition: all 0.4s ease-in;
 }
 
 .nav-wraper ul li a:hover {
-    font-size: 22px; 
+    color: rgba(14, 43, 100, 1); 
 }
 
 .navButton-inMenu {
@@ -187,6 +187,7 @@ html {
     display: none;
     width: 24px;
     height: 24px;
+    fill: #039ED6;
 }
 
 .navButton button {
@@ -335,8 +336,8 @@ html {
     }
 }
 
-/* DEPARTAMENT */
-.departamentMain-wraper {
+/* CAREER */
+.careerMain-wraper {
     width: 85%;
     margin: 108px auto 163px auto;
 }
@@ -355,7 +356,7 @@ html {
     color: #0D285B;
 }
 
-.search-departaments {
+.search-career {
     width: 100%;
     max-width: 554px;
     background: #EAEFF4;
@@ -368,7 +369,7 @@ html {
 
 }
 
-.search-departaments input {
+.search-career input {
     width: 100%;
     padding: 20px;
     width: 100%;
@@ -379,7 +380,7 @@ html {
     color: rgba(58, 83, 129, 0.8);
 }
 
-.search-departaments input:focus {
+.search-career input:focus {
     width: 100%;
     border: none;
     outline: none;
@@ -392,14 +393,14 @@ html {
     cursor: pointer;
 }
 
-.search-departaments input::placeholder {
+.search-career input::placeholder {
     font-family: 'Gilroy-Light';
     font-size: 20px;
     color: rgba(58, 83, 129, 0.8);
 
 }
 
-.departaments-list {
+.career-list {
     width: 80%;
     margin: 140px auto auto auto;
 
@@ -498,16 +499,16 @@ html {
 }
 
 @media (max-width: 1500px) {
-    .search-departaments {
+    .search-career {
         max-width: 490px;
     }
     .title h2 {
         font-size: 40px;
     }
-    .search-departaments input{
+    .search-career input{
         font-size: 16px;
     }
-    .search-departaments input::placeholder {
+    .search-career input::placeholder {
         font-size: 16px;  
     }
 }
@@ -515,16 +516,18 @@ html {
 @media (max-width: 1265px) {
     .title-search {
         flex-direction: column;
-        align-items: unset;
         gap: 28px;
+    }
+    .search-career {
+        width: 100%;
+        max-width: 80%;
     }
 }
 @media (max-width: 1024px) {
-    .departaments-list {
+    .career-list {
         margin: 120px auto auto auto;
     }
     .title-search {
-        align-items: center;
         gap: 32px;
     }
     .title-search h2{
@@ -559,7 +562,7 @@ html {
         padding: 8px 32px;
         
     }
-    .departaments-list {
+    .career-list {
         margin: 104px auto auto auto;
     }
     .title-search {
@@ -569,17 +572,14 @@ html {
     .title-search h2{
         font-size: 32px;
     }
-    .search-departaments {
-        max-width: 372px;
-    }
-    .search-departaments input {
+    .search-career input {
         padding: 16px;
         font-size: 12px;
     }
-    .search-departaments svg {
+    .search-career svg {
         width: 16px;
     }
-    .search-departaments input::placeholder {
+    .search-career input::placeholder {
         font-size: 12px;  
     }
 }
@@ -588,17 +588,14 @@ html {
         font-size: 28px;
         line-height: 36px;
     }
-    .search-departaments {
-        max-width: 248px;
-    }
-    .search-departaments input {
+    .search-career input {
         padding: 12px;
         font-size: 12px;
     }
-    .search-departaments svg {
+    .search-career svg {
         width: 16px;
     }
-    .search-departaments input::placeholder {
+    .search-career input::placeholder {
         font-size: 12px;  
     }
 }
