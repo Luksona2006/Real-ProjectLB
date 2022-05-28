@@ -97,7 +97,7 @@
                             <li> <a href="#">Departments</a></li>
                             <li> <a href="#">Doctors</a></li>
                             <li> <a href="contact.htmlg">Contact</a></li>
-                            <li> <a href="#">Careers</a></li>
+                            <li> <a href="career.html">Careers</a></li>
                             <li> <a href="#">3D Clinic</a></li>
                             <li class="ul-newsli"> <a href="#">News</a></li>
                             <li class="ul-newsli"> <a href="#">Appointment</a></li>
@@ -258,7 +258,7 @@
                             <li><a href="#">Departments</a></li>
                             <li><a href="#">Doctors</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="career.html">Careers</a></li>
                             <li><a href="#">3D Clinic</a></li>
                         </ul>
                     </div>
@@ -305,7 +305,8 @@
             To : 'them@website.com',
             From : document.getElementById("email").value,
             Subject : "This is the subject",
-            Body : "Name" + document.getElementById("name").value 
+            Body : "Name" + document.getElementById("name").value + "" + document.getElementById("lastName").value 
+                + "<br> Date&Time" + document.getElementById("date").value + "" + document.getElementById("time").value 
                 + "<br> Email:"  + document.getElementById("email").value 
                 + "<br> Phone:"  + document.getElementById("number").value
                 + "<br> Message:"  + document.getElementById("message").value
