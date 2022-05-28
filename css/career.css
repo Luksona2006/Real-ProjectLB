@@ -381,13 +381,11 @@ html {
 
 .search-departaments input:focus {
     width: 100%;
-    padding: 20px;
-    width: 100%;
     border: none;
     outline: none;
 }
 .button {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .button button {
@@ -400,6 +398,7 @@ html {
     color: rgba(58, 83, 129, 0.8);
 
 }
+
 .departaments-list {
     width: 80%;
     margin: 140px auto auto auto;
@@ -497,10 +496,135 @@ html {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+
+@media (max-width: 1500px) {
+    .search-departaments {
+        max-width: 490px;
+    }
+    .title h2 {
+        font-size: 40px;
+    }
+    .search-departaments input{
+        font-size: 16px;
+    }
+    .search-departaments input::placeholder {
+        font-size: 16px;  
+    }
+}
+
+@media (max-width: 1265px) {
+    .title-search {
+        flex-direction: column;
+        align-items: unset;
+        gap: 28px;
+    }
+}
+@media (max-width: 1024px) {
+    .departaments-list {
+        margin: 120px auto auto auto;
+    }
+    .title-search {
+        align-items: center;
+        gap: 32px;
+    }
+    .title-search h2{
+        text-align: center;
+    }
+}
+
+@media (max-width:800px){
+    .list-info p{
+        font-size: 20px; 
+    }
+    
+    .list-info button {
+        font-size: 18px;
+        padding: 12px 36px;
+        
+    }
+}
+
+@media (max-width: 670px) {
+    .list {
+        gap: 16px;
+    }
+
+    .list-info p{
+        font-size: 16px; 
+        max-width: 154px;
+    }
+    
+    .list-info button {
+        font-size: 14px;
+        padding: 8px 32px;
+        
+    }
+    .departaments-list {
+        margin: 104px auto auto auto;
+    }
+    .title-search {
+        align-items: center;
+        gap: 32px;
+    }
+    .title-search h2{
+        font-size: 32px;
+    }
+    .search-departaments {
+        max-width: 372px;
+    }
+    .search-departaments input {
+        padding: 16px;
+        font-size: 12px;
+    }
+    .search-departaments svg {
+        width: 16px;
+    }
+    .search-departaments input::placeholder {
+        font-size: 12px;  
+    }
+}
+@media (max-width: 540px) {
+    .title-search h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .search-departaments {
+        max-width: 248px;
+    }
+    .search-departaments input {
+        padding: 12px;
+        font-size: 12px;
+    }
+    .search-departaments svg {
+        width: 16px;
+    }
+    .search-departaments input::placeholder {
+        font-size: 12px;  
+    }
+}
+
+
+@media (max-width: 430px) {
+
+    .list {
+        gap: 16px;
+    }
+
+    .list-info p{
+        font-size: 12px; 
+        max-width: 121px;
+    }
+    
+    .list-info button {
+        font-size: 10px;
+        padding: 6px 28px;
+        
+    }
+    .line {
+        width: 100%;
+        border: 1px solid #0D285B;
+        background-color: #0D285B;
+    }
 }
 
 
