@@ -394,6 +394,7 @@ html {
 }
 
 .choose-department select {
+    cursor: pointer;
     width: 100%;
     padding: 20px;
     width: 100%;
@@ -402,6 +403,8 @@ html {
     font-family: 'Gilroy-Light';
     font-size: 20px;
     color: rgba(58, 83, 129, 0.8);
+
+    appearance: none;
 }
 
 .choose-department select:focus {

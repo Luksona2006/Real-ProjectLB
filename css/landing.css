@@ -91,7 +91,13 @@ html {
 .selected-language {
     cursor: pointer;
     display: flex;
+    line-height: 2;
 }
+
+.selected-language img {
+    width: 32px;
+}
+
 #instagram  {
     display: flex;
 }
