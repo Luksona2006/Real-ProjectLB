@@ -127,16 +127,27 @@
                     <div class="title"> 
                         <h2>Our Doctors</h2>
                     </div>
-                    <form class="search-doctor" action="" class="search">
-                        <input type="text" placeholder="Search doctor...">
-                        <div class="button">
-                            <button type="submit">
-                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M21.0205 21.0208L17.0387 16.8088C18.6224 15.1685 19.5515 13.0055 19.6507 10.7275C19.7499 8.44955 19.0125 6.21397 17.5773 4.44213C16.1422 2.67029 14.1086 1.48458 11.8597 1.10849C9.61079 0.732399 7.30199 1.1919 5.36847 2.40039C3.43494 3.60888 2.01023 5.48288 1.36288 7.66917C0.715526 9.85547 0.890237 12.2031 1.85408 14.2694C2.81793 16.3358 4.50434 17.9783 6.59545 18.8873C8.68656 19.7962 11.0379 19.9089 13.2064 19.2041" stroke="#039ED6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
+                    <div class="searches">
+                        <form class="choose-department" action="" class="search">
+                            <select name="format" id="format">
+                                <option selected disabled>Choose By Departments</option>
+                                <option value="allergology">Allergology</option>
+                                <option value="cardiac surgery">Cardiac Surgery</option>
+                                <option value="arthritis center">Arthritis Center</option>
+                                <option value="arrhythmology">Arrhythmology</option>
+                            </select>
+                        </form>
+                        <form class="search-doctor" action="" class="search">
+                            <input type="text" placeholder="Search doctor...">
+                            <div class="button">
+                                <button type="submit">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.0205 21.0208L17.0387 16.8088C18.6224 15.1685 19.5515 13.0055 19.6507 10.7275C19.7499 8.44955 19.0125 6.21397 17.5773 4.44213C16.1422 2.67029 14.1086 1.48458 11.8597 1.10849C9.61079 0.732399 7.30199 1.1919 5.36847 2.40039C3.43494 3.60888 2.01023 5.48288 1.36288 7.66917C0.715526 9.85547 0.890237 12.2031 1.85408 14.2694C2.81793 16.3358 4.50434 17.9783 6.59545 18.8873C8.68656 19.7962 11.0379 19.9089 13.2064 19.2041" stroke="#039ED6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="doctors-wraper">
                     <div class="doctors"> 

@@ -352,6 +352,10 @@ html {
     justify-content: space-between;
 }
 
+.title {
+    width: 70%;
+}
+
 .title h2 {
     font-family: 'Gilroy-Bold';
     font-style: normal;
@@ -359,7 +363,11 @@ html {
     font-size: 48px;
     color: #0D285B;
 }
-
+.searches {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
 .search-doctor {
     width: 100%;
     max-width: 442px;
@@ -372,6 +380,36 @@ html {
     align-items: center;
 
 }
+.choose-department {
+    width: 100%;
+    max-width: 442px;
+    background: #EAEFF4;
+    border: 2px solid #039ED6;
+    border-radius: 36px;
+    padding-right: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choose-department select {
+    width: 100%;
+    padding: 20px;
+    width: 100%;
+    border: none;
+
+    font-family: 'Gilroy-Light';
+    font-size: 20px;
+    color: rgba(58, 83, 129, 0.8);
+}
+
+.choose-department select:focus {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
 .search-doctor input {
     width: 100%;
     padding: 20px;
@@ -478,6 +516,15 @@ html {
 }
  
 @media (max-width: 1024px) {
+    .title h2 {
+       text-align: center;
+    }
+    .choose-department select {
+        padding: 16px;
+    }
+    .choose-department option {
+        padding: 16px;
+    }
     .search-doctor input {
         padding: 16px;
     }
@@ -486,9 +533,13 @@ html {
         grid-template-columns: 1fr 1fr;
         margin: 52px auto auto auto;
     }
-}
-
-@media (max-width: 900px) {
+    .searches {
+        flex-direction: column;
+    }
+    .choose-department {
+        width: 100%;
+        max-width: none;
+    }
     .title-search {
         flex-direction: column;
         gap: 28px;
@@ -509,6 +560,10 @@ html {
     }
     .title h2 {
         font-size: 36px;
+    }
+    .choose-department select {
+        padding: 12px;
+        font-size: 16px;
     }
     .search-doctor input {
         padding: 12px;
@@ -545,6 +600,10 @@ html {
     }
     .title h2 {
         font-size: 32px;
+    }
+    .choose-department select {
+        padding: 12px;
+        font-size: 12px;
     }
     .search-doctor input {
         padding: 12px;
