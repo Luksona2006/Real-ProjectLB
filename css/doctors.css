@@ -497,7 +497,7 @@ html {
         max-width: none;
     }
     .doctors-wraper {
-        width: 70%;
+        width: 90%;
         grid-template-columns: 1fr;
         margin: 52px auto auto auto;
     }
@@ -522,6 +522,9 @@ html {
     }
 }
 @media (max-width:580px) {
+    .doctors-info {
+        padding: 20px 12px;
+    }
     .doctors-info h4 {
         font-size: 16px;
     }
@@ -537,6 +540,9 @@ html {
     
 }
 @media  (max-width: 480px) {
+    .doctors-info {
+        padding: 20px 8px;
+    }
     .title h2 {
         font-size: 32px;
     }
@@ -552,14 +558,6 @@ html {
     }
 }
 @media (max-width:392px) {
-    .doctors-info h4 {
-        font-size: 12px;
-    }
-    .doctors-info p {
-        font-family: 'Gilroy-Medium';
-        font-size: 8px;
-        color: #3C5481;
-    }
     .doctors-info button {
         font-size: 12px;
         padding: 8px 0;
