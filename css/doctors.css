@@ -360,7 +360,7 @@ html {
     color: #0D285B;
 }
 
-.search-department {
+.search-doctor {
     width: 100%;
     max-width: 442px;
     background: #EAEFF4;
@@ -372,7 +372,7 @@ html {
     align-items: center;
 
 }
-.search-department input {
+.search-doctor input {
     width: 100%;
     padding: 20px;
     width: 100%;
@@ -383,7 +383,7 @@ html {
     color: rgba(58, 83, 129, 0.8);
 }
 
-.search-department input:focus {
+.search-doctor input:focus {
     width: 100%;
     border: none;
     outline: none;
@@ -395,7 +395,7 @@ html {
     cursor: pointer;
 }
 
-.search-department input::placeholder {
+.search-doctor input::placeholder {
     font-family: 'Gilroy-Light';
     font-size: 20px;
     color: rgba(58, 83, 129, 0.8);
@@ -478,7 +478,7 @@ html {
 }
  
 @media (max-width: 1024px) {
-    .search-department input {
+    .search-doctor input {
         padding: 16px;
     }
     .doctors-wraper {
@@ -493,7 +493,7 @@ html {
         flex-direction: column;
         gap: 28px;
     }
-    .search-department  {
+    .search-doctor  {
         max-width: none;
     }
     .doctors-wraper {
@@ -510,14 +510,14 @@ html {
     .title h2 {
         font-size: 36px;
     }
-    .search-department input {
+    .search-doctor input {
         padding: 12px;
         font-size: 16px;
     }
-    .search-department input::placeholder {
+    .search-doctor input::placeholder {
         font-size: 16px;  
     }
-    .search-department svg {
+    .search-doctor svg {
         width: 20px;
     }
 }
@@ -540,14 +540,14 @@ html {
     .title h2 {
         font-size: 32px;
     }
-    .search-department input {
+    .search-doctor input {
         padding: 12px;
         font-size: 12px;
     }
-    .search-department input::placeholder {
+    .search-doctor input::placeholder {
         font-size: 12px;  
     }
-    .search-department svg {
+    .search-doctor svg {
         width: 16px;
     }
 }
