@@ -63,10 +63,13 @@ html {
 
 .header-Infowraper {
     display: flex;
+    max-width: 1600px;
     width: 85%;
     justify-content: space-between;
     padding: 22px 0;
+    margin: auto;
 }
+
 
 .header-left {
     display: flex;
