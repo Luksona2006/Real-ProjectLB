@@ -82,8 +82,21 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="selected-language">
-
+                    <div class="lang-menu">
+                        <div class="selected-lang">
+                            <a href="#"><img src="image-landing/England.svg" alt="English Flag"></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#" class="ge"><img src="image-landing/Georgia.svg" alt="Georgian Flag"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="en"><img src="image-landing/England.svg" alt="English Flag"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="ru"><img src="image-landing/Russia.svg" alt="Georgian Flag"></a>
+                            </li>
+                        </ul>                   
                     </div>
                 </div>
             </div>
@@ -629,9 +642,9 @@
                     <div class="footer-nav">
                         <h2> Menu </h2>
                         <ul class="menu">
-                            <li><a href="#">About us</a></li>
+                            <li><a href="about-us.html">About us</a></li>
                             <li><a href="departments.html">Departments</a></li>
-                            <li><a href="#">Doctors</a></li>
+                            <li><a href="doctors.html">Doctors</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="career.html">Careers</a></li>
                             <li><a href="#">3D Clinic</a></li>

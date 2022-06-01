@@ -25,11 +25,6 @@
     src: url(../Font/Gilroy/Gilroy-Black.ttf);
 }
 
-@font-face {
-    font-family: "Gilroy-Light";
-    src: url(../Font/Gilroy/Gilroy-Light.ttf);
-}
-
 
 .container {
     width: 1600px;
@@ -63,6 +58,7 @@ html {
 
 .header-Infowraper {
     display: flex;
+    max-width: 1600px;
     width: 85%;
     justify-content: space-between;
     padding: 22px 0;
@@ -94,10 +90,64 @@ html {
     gap: 20px;
 }
 
-.selected-language {
+.lang-menu {
+    display: flex;
+    text-align: right;
+    font-weight: bold;
+    position: relative;
+}
+.lang-menu .selected-lang {
+    display: flex;   
+    justify-content: space-between;
     cursor: pointer;
+}
+.lang-menu .selected-lang a {
+    font-family: "Gilroy-Bold";
+    color: #EBEBEB;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang-menu ul li a {
+    font-family: "Gilroy-SemiBold";
+    text-decoration: none;
+    padding: 5px 10px;
     display: flex;
 }
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu img{
+    width: 32px;
+    height: 32px;
+}
+
+.lang-menu:hover ul {
+    display: block;
+}
+
 #instagram  {
     display: flex;
 }
@@ -177,7 +227,7 @@ html {
 }
 
 .nav-wraper ul li a:hover {
-    color: rgba(14, 43, 100, 1); 
+    color: rgba(14, 43, 100, 1);
 }
 
 .navButton-inMenu {
@@ -387,7 +437,6 @@ html {
     background: #EAEFF4;
     border: 2px solid #039ED6;
     border-radius: 36px;
-    padding-right: 15px;
 
     display: flex;
     justify-content: space-between;
