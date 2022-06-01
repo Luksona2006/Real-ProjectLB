@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @font-face {
-    font-family: "Gilroy-Medium";
-    src: url(../Font/Gilroy/Gilroy-Medium.ttf);
-}
-
-@font-face {
-    font-family: "Gilroy-SemiBold";
-    src: url(../Font/Gilroy/Gilroy-SemiBold.ttf);
+    font-family: "Gilroy-Black";
+    src: url(../Font/Gilroy/Gilroy-Black.ttf);
 }
 
 @font-face {
@@ -16,13 +11,23 @@
 }
 
 @font-face {
+    font-family: "Gilroy-SemiBold";
+    src: url(../Font/Gilroy/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url(../Font/Gilroy/Gilroy-Medium.ttf);
+}
+
+@font-face {
     font-family: "Gilroy-Regular";
     src: url(../Font/Gilroy/Gilroy-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Gilroy-Black";
-    src: url(../Font/Gilroy/Gilroy-Black.ttf);
+    font-family: "Gilroy-Light";
+    src: url(../Font/Gilroy/Gilroy-Light.ttf);
 }
 
 
