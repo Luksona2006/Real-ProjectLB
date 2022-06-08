@@ -159,8 +159,8 @@
                                 </button>
                             </div>                                
                         </form>
-                        <form class="search-doctor" action="" class="search">
-                            <input type="text" placeholder="Search doctor...">
+                        <form class="search-doctor" action="">
+                            <input type="search" id="myInput" onkeyup="myFunction()" placeholder="Search doctor...">
                             <div class="button">
                                 <button type="submit">
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -171,73 +171,72 @@
                         </form>
                     </div>
                 </div>
-                <div class="doctors-wraper">
-                    <div class="doctors"> 
+                <ul class="doctors-wraper">
+                    <li class="doctors"> 
                         <img src="image-doctors/doctor-img.png" alt="doctors img">
                         <div class="doctors-info">
-                            <h4>Dr. Kimberly Mastrangelo</h4>
+                            <h4>Ketevan Jakeli</h4>
                             <p>Cardiac Surgery</p>
                             <a href="#"><button>Read More</button></a>
                         </div>
-                    </div>
-                    <div class="doctors"> 
+                    </li>
+                    <li class="doctors"> 
                         <img src="image-doctors/doctor1-img.png" alt="doctors img">
                         <div class="doctors-info">
-                            <h4>Dr. Kimberly Mastrangelo</h4>
+                            <h4>Ketevan Javalidze</h4>
                             <p>Cardiac Surgery</p>
                             <a href="#"><button>Read More</button></a>
                         </div>
-                    </div>
-                    <div class="doctors"> 
+                    </li>
+                    <li class="doctors"> 
                         <img src="image-doctors/doctor2-img.png" alt="doctors img">
                         <div class="doctors-info">
-                            <h4>Dr. Kimberly Mastrangelo</h4>
+                            <h4>Ketevan Wereteli</h4>
                             <p>Cardiac Surgery</p>
                             <a href="#"><button>Read More</button></a>
                         </div>
-                    </div>
-                    <div class="doctors"> 
+                    </li>
+                    <li class="doctors"> 
                         <img src="image-doctors/doctor3-img.png" alt="doctors img">
                         <div class="doctors-info">
-                            <h4>Dr. Kimberly Mastrangelo</h4>
+                            <h4>Ketevan Caburishvili</h4>
                             <p>Cardiac Surgery</p>
                             <a href="#"><button>Read More</button></a>
                         </div>
-                    </div>
-                    <div class="doctors"> 
+                    </li>
+                    <li class="doctors"> 
                         <img src="image-doctors/doctor-img.png" alt="doctors img">
                         <div class="doctors-info">
-                            <h4>Dr. Kimberly Mastrangelo</h4>
+                            <h4>Ketevan Komaxidze</h4>
                             <p>Cardiac Surgery</p>
                             <a href="#"><button>Read More</button></a>
                         </div>
-                    </div>
-                    <div class="doctors"> 
+                    </li>
+                    <li class="doctors"> 
                         <img src="image-doctors/doctor1-img.png" alt="doctors img">
                         <div class="doctors-info">
-                            <h4>Dr. Kimberly Mastrangelo</h4>
+                            <h4>Salome Varshalomidze</h4>
                             <p>Cardiac Surgery</p>
                             <a href="#"><button>Read More</button></a>
                         </div>
-                    </div>
-                    <div class="doctors"> 
+                    </li>
+                    <li class="doctors"> 
                         <img src="image-doctors/doctor2-img.png" alt="doctors img">
                         <div class="doctors-info">
-                            <h4>Dr. Kimberly Mastrangelo</h4>
+                            <h4>Nona Malazonia</h4>
                             <p>Cardiac Surgery</p>
                             <a href="#"><button>Read More</button></a>
                         </div>
-                    </div>
-                    <div class="doctors"> 
+                    </li>
+                    <li class="doctors"> 
                         <img src="image-doctors/doctor3-img.png" alt="doctors img">
                         <div class="doctors-info">
-                            <h4>Dr. Kimberly Mastrangelo</h4>
+                            <h4>Nino Kvajadze</h4>
                             <p>Cardiac Surgery</p>
                             <a href="#"><button>Read More</button></a>
                         </div>
-                    </div>
-                    
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
@@ -321,7 +320,7 @@
                         <ul class="menu">
                             <li><a href="#">About us</a></li>
                             <li><a href="departments.html">Departments</a></li>
-                            <li><a href="#">Doctors</a></li>
+                            <li><a href="doctors.html">Doctors</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             <li><a href="career.html">Careers</a></li>
                             <li><a href="#">3D Clinic</a></li>
@@ -359,6 +358,30 @@
         }
 
     </script>
+
+<script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+    
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+
+
 
 </body>
 </html>
