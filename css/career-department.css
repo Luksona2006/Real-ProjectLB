@@ -201,7 +201,7 @@ html {
         width: 16px;
     }
     .header-call p{
-        font-size: 16px;
+        font-size: 15px;
     }
     .header-right svg{
         width: 24px;
@@ -399,7 +399,20 @@ html {
 
 
 /* CAREER DEPARTMENT*/
+#popBlur {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(3, 158, 214, 0.5);
+    z-index: 20;
+    backdrop-filter: blur(77px);
+    pointer-events: none;
+    user-select: none;
 
+    transition: opacity 0.5s ease-in-out;
+}
 
 .mainWraper {
     width: 85%;
@@ -407,13 +420,12 @@ html {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    padding: 120px 0 ;
+    padding: 120px 0;
 }
 
 .mainWraper h2{
     font-family: 'Gilroy-SemiBold';
     font-size: 40px;
-    line-height: 47px;
 
     color: #0D285B;
 }
@@ -503,7 +515,7 @@ html {
 
     position: absolute;
     right: 50%;
-    top: 50%;
+    top: -200%;
     z-index: 20;
 
     transform: translate(50%) scale(1.25);
@@ -511,6 +523,7 @@ html {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 24px;
 
+    transition: all 0.5s ease-in-out;
 }
 
 .popUp-inputs {
@@ -624,6 +637,54 @@ html {
 .inputs-button button:hover {
     color: #FFFFFF;
     background-color: #039ED6;
+}
+
+@media (max-width: 1024px) {
+    .popUp {
+        width: 70%;
+    }
+}
+
+@media (max-width: 720px) {
+    .popUp-Title h2 {
+        font-size: 28px;
+    }
+    .popUp-Title svg {
+        width: 16px;
+    }
+    .input-div p {
+        font-size: 16px;
+    }
+    .text-input {
+        font-size: 14px;
+    }
+    .text-input::placeholder{
+        font-size: 16px;
+    }
+
+    .inputs-button button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 14px 72px;
+        font-size: 16px;
+    }
+    .popUp-Title svg {
+        width: 16px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+    .text-input {
+        padding: 12px;
+    }
+    .text-input::placeholder{
+        font-size: 14px;
+    }
 }
 
 
