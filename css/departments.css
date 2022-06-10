@@ -231,7 +231,7 @@ html {
     transition: all 0.4s ease-in;
 }
 
-.nav-wraper ul li a:hover {
+.nav-links ul li a:hover {
     color: rgba(14, 43, 100, 1);
 }
 
@@ -322,7 +322,7 @@ html {
         top: 0;
         right: -200px;
         text-align: left;
-        z-index: 10;
+        z-index: 100;
     }
 
     .nav-links ul li {
@@ -354,8 +354,10 @@ html {
         right: 5px;
     }
     .nav-links ul li a:hover {
-        padding-right: 45px
+        padding-right: 45px;
+        color: #F5F6F7;
     }
+    
 
     .fa-solid {
         display: block;
