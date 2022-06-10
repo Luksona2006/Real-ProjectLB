@@ -45,6 +45,7 @@
 body {
     background: #F5F6F7;
     overflow-x: hidden;
+    position: relative;
 }
 html {
     overflow-x: hidden;
@@ -407,6 +408,7 @@ html {
     min-height: 100%;
     background: rgba(3, 158, 214, 0.5);
     z-index: 20;
+    opacity: 0;
     backdrop-filter: blur(77px);
     pointer-events: none;
     user-select: none;
@@ -513,18 +515,17 @@ html {
     gap: 32px;
     padding: 44px;
 
-    position: absolute;
-    right: 50%;
-    top: -200%;
+    position: sticky;
     z-index: 20;
-
-    transform: translate(50%) scale(1.25);
+    margin: auto;
 
     background: rgba(255, 255, 255, 0.95);
     border-radius: 24px;
 
     transition: all 0.5s ease-in-out;
+
 }
+
 
 .popUp-inputs {
     display: flex;
