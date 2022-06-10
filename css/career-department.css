@@ -107,6 +107,7 @@ html {
     text-align: right;
     font-weight: bold;
     position: relative;
+    z-index: 24;
 }
 .lang-menu .selected-lang {
     display: flex;   
@@ -329,7 +330,7 @@ html {
         top: 0;
         right: -200px;
         text-align: left;
-        z-index: 10;
+        z-index: 100;
     }
 
     .nav-links ul li {
@@ -516,9 +517,12 @@ html {
     gap: 32px;
     padding: 44px;
 
-    position: sticky;
+    position: absolute;
+    top: -200%;
+    left: 50%;
     z-index: 20;
-    margin: auto;
+
+    transform: translate(-50%, -25%);
 
     background: rgba(255, 255, 255, 0.95);
     border-radius: 24px;
@@ -537,6 +541,7 @@ html {
 .popUp-Title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .popUp-Title h2 {
@@ -547,6 +552,10 @@ html {
 
 .popUp-Title button {
     cursor: pointer;
+}
+.popUp-Title button svg {
+    display: flex;
+    padding-top: 5px;
 }
 
 .input-div {
@@ -643,7 +652,8 @@ html {
 
 @media (max-width: 1024px) {
     .popUp {
-        width: 70%;
+        width: 80%;
+        transform: translate(-50%, -30%);
     }
 }
 
@@ -674,19 +684,20 @@ html {
     }
     .popUp-Title svg {
         width: 16px;
-        position: absolute;
-        right: 20px;
-        top: 20px;
     }
 }
 
 @media (max-width: 580px) {
+    .popUp {
+        top: 80%;
+        transform: translate(-50%, 12%);
+    }
     .text-input {
         padding: 12px;
     }
     .text-input::placeholder{
         font-size: 14px;
-    }
+    } 
 }
 
 
