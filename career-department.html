@@ -362,9 +362,18 @@
     <script>
         let popUp = document.getElementsByClassName("popUp");
         let popBlur = document.getElementById("popBlur");
+        let screen = window.innerWidth;
 
         function showpopup() {
-            popUp[0].style.top = "50%";
+            if(screen <= 580) {
+                popUp[0].style.top = "45%";
+            }
+            if(screen <= 420) {
+                popUp[0].style.top = "52%";
+            }
+            if(screen > 580) {
+                popUp[0].style.top = "50%";
+            }
             popBlur.style.opacity = "1"
         }
 
