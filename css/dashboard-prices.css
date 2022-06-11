@@ -72,7 +72,7 @@
     color: rgba(255, 255, 255, 0.8); 
     transition: all 0.2s ease-in-out;   
 }
-.dashboard-nav li:nth-of-type(2) a {
+.dashboard-nav li:nth-of-type(5) a {
     color: #FFFFFF
 }
 

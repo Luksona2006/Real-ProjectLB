@@ -43,6 +43,14 @@
     flex-direction: column;
     gap: 29px;
 }
+.control-panel {
+    padding: 72px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
 .dashboard-nav h2 {
     font-family: 'Inter';
     font-style: normal;
@@ -82,9 +90,8 @@
 /* DASHBOARD */
 
 .dashboard-wraper {
-    padding: 72px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 56px;
 }
 .dashboard {
@@ -143,8 +150,9 @@
 }
 
 .delete {
+    border: 2px solid #B10000;
+    padding: 14px 22px;
     cursor: pointer;
-    padding: 16px 22px;
     background: #B10000;
     border-radius: 8px;
 
@@ -154,4 +162,16 @@
     font-size: 18px;
     text-align: center;
     color: #f5f5f5
+}
+
+.edit:hover {
+    background-color: #061A40;
+    color: #f5f5f5;
+}
+
+.delete:hover {
+    background-color: #f5f5f5;
+    color: #B10000;;
+
+
 }
