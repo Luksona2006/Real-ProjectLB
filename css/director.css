@@ -435,6 +435,13 @@ html {
     justify-content: space-between;
     align-items: center;
 }
+
+.title svg path {
+    transition: all 0.3s ease-in-out;
+}
+.title svg:hover > path {
+    fill: #039ED6;
+}
 .name-pos {
     display: flex;
     flex-direction: column;
