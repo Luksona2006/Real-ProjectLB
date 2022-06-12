@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: "Gilroy-Black";
+    src: url(../Font/Gilroy/Gilroy-Black.ttf);
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url(../Font/Gilroy/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Gilroy-SemiBold";
+    src: url(../Font/Gilroy/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url(../Font/Gilroy/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url(../Font/Gilroy/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url(../Font/Gilroy/Gilroy-Light.ttf);
+}
+
+.mainWraper {
+    display: flex;
+    height: 100vh;
+}
+.dashboard-navWraper {
+    background-color: #061A40;
+    padding: 52px 60px;
+}
+.dashboard-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+.control-panel {
+    padding: 72px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+}
+.dashboard-nav h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.dashboard-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.dashboard-nav ul li a{
+    font-family: 'Gilroy-SemiBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8); 
+    transition: all 0.2s ease-in-out;   
+}
+.dashboard-nav li:first-of-type a {
+    color: #FFFFFF
+}
+
+.dashboard-nav ul li a:hover {
+    color: rgba(255, 255, 255, 1);   
+}
+.logOut {
+    font-family: 'Gilroy-SemiBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* DASHBOARD */
+
+.title {
+    display: flex;
+    gap: 44px;
+    align-items: center;
+}
+
+.title h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+
+    color: #061A40;
+}
+.title button {
+    cursor: pointer;
+}
+
+.dashboard-wraper {
+    width: 100%;
+    padding: 0 80px;
+    margin: 54px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+
+.save-button {
+    margin: auto;
+}
+.save-button button {
+    cursor: pointer;
+    padding: 14px 24px;
+
+    font-family: 'Gilroy-SemiBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    background: #026C00;
+    border-radius: 8px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.save-button button:hover {
+    transform: scale(1.05);
+}
+
+/* PANEL */
+.doctors-add {
+    display: flex;
+    gap: 36px;
+}
+.basic {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+textarea {
+    border: 1px solid rgba(13, 40, 91, 0.4);
+    border-radius: 8px;
+    width: 50%;
+    padding: 15px 24px 0 16px;
+    color: rgb(60, 84, 129);
+}
+textarea::placeholder {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(60, 84, 129, 0.64);
+}
+input {
+    padding: 16px 24px;
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(60, 84, 129, 0.64);
+
+    border: 1px solid rgba(13, 40, 91, 0.4);
+    border-radius: 8px;
+}
+
+input::placeholder {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(60, 84, 129, 0.64);
+}
+.choose-img {
+    display: flex;
+    gap: 12px;
+}
+.file {
+    display: none;
+}
+.file-name {
+    position: relative;
+
+    padding: 16px 24px;
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(60, 84, 129, 0.64);
+
+    border: 1px solid rgba(13, 40, 91, 0.4);
+    border-radius: 8px;
+}
+.btn {
+    font-family: 'Gilroy-SemiBold';
+    cursor: pointer;
+    background: #3479ce;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    background-color: #4493c7;
+    transition: all 0.6s ease-out;
+    color: #FFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard-newsAdd.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <main>
+        <div class="mainWraper">
+            <div class="dashboard-navWraper">
+                <nav class="dashboard-nav">
+                    <h2>
+                        Dashboard
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="dashboard-doctors.html">
+                                Doctors
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboard-vacancies.html">
+                                Vacancies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboard-news.html">
+                                News
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboard-prices.html">
+                                Prices
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="logOut">Log out</a>
+                </nav>
+            </div>
+            <div class="control-panel">
+                <div class="title">
+                    <div>
+                        <a href="dashboard-news.html">
+                            <button>
+                                <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.999 12.0001C26.999 12.4311 26.8278 12.8444 26.523 13.1491C26.2183 13.4539 25.805 13.6251 25.374 13.6251H6.54675L13.5245 20.5996C13.6756 20.7507 13.7954 20.93 13.8772 21.1275C13.959 21.3249 14.001 21.5364 14.001 21.7501C14.001 21.9638 13.959 22.1753 13.8772 22.3727C13.7954 22.5702 13.6756 22.7495 13.5245 22.9006C13.3734 23.0517 13.194 23.1715 12.9966 23.2533C12.7992 23.3351 12.5877 23.3772 12.374 23.3772C12.1603 23.3772 11.9488 23.3351 11.7514 23.2533C11.5539 23.1715 11.3746 23.0517 11.2235 22.9006L1.4735 13.1506C1.32217 12.9997 1.2021 12.8203 1.12018 12.6229C1.03826 12.4255 0.996094 12.2138 0.996094 12.0001C0.996094 11.7864 1.03826 11.5747 1.12018 11.3773C1.2021 11.1799 1.32217 11.0005 1.4735 10.8496L11.2235 1.0996C11.5286 0.794468 11.9425 0.623047 12.374 0.623047C12.8055 0.623047 13.2194 0.794468 13.5245 1.0996C13.8296 1.40473 14.001 1.81858 14.001 2.2501C14.001 2.68162 13.8296 3.09547 13.5245 3.4006L6.54675 10.3751H25.374C25.805 10.3751 26.2183 10.5463 26.523 10.8511C26.8278 11.1558 26.999 11.5691 26.999 12.0001Z" fill="#061A40"/>
+                                </svg>                  
+                            </button>
+                        </a> 
+                    </div>
+                    <h2>Add News</h2>
+                </div>
+                <div class="dashboard-wraper">
+                    <form class="doctors-add">
+                        <div class="basic">
+                            <input type="text" placeholder="News title">
+                            <input type="date" placeholder="Date">
+                            <div>
+                                <input type="file" name="file" id="file" class="file">
+                                <div class="choose-img">
+                                  <input type="text" name="file-name" id="file-name" class="file-name" placeholder="Upload Image"readonly="readonly">
+                                  <button type="button" class="btn">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="News text...."></textarea>
+                    </form>
+                    <div class="save-button">
+                        <button>Save</button>
+                    </div>
+                </div>                
+            </div>
+        </div> 
+    </main>
+    <script>
+        $(document).ready(function() {
+            $('.btn').on('click', function() {
+                $('.file').trigger('click');
+            });
+
+            $('.file').on('change', function() {
+                let fileName = $(this)[0].files[0].name;    
+                $('#file-name').val(fileName);
+            });
+        })
+    </script>
+</body>
+
+</html>
