@@ -1,4 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: none;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../Font/Inter/static/Inter-Medium.ttf);
+}
 
 @font-face {
     font-family: "Gilroy-Black";
@@ -40,6 +102,7 @@
 body {
     background: #F5F6F7;
     overflow-x: hidden;
+    position: relative;
 }
 html {
     overflow-x: hidden;
@@ -1312,7 +1375,1390 @@ html {
     transform: translateY(-0.25em);
 }
 
+/* ABOUT-US */
 
+.aboutUsMain-wraper {
+    width: 85%;
+    margin: 52px auto 160px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.aboutUstitle h2 {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #0D285B;
+}
+.aboutUstext-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.aboutUstext-box p{
+    font-family: 'Gilroy-Regular';
+    font-size: 20px;
+    line-height: 23px;
+    color: #0D285B;
+}
+.aboutUstext-box span {
+    font-family: 'Gilroy-Bold';
+    font-weight: 700;
+    color: #0D285B;
+    padding-right: 6px;
+    word-spacing: normal;
+
+}
+.aboutUstext-box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.aboutUstext-box ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.aboutUstext-box ul li h5 {
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #0D285B;
+}
+
+/* DEPARTMENTS */
+
+.departmentsMain-wraper {
+    width: 85%;
+    margin: 108px auto 163px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+}
+
+.departmentstitle-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.departmentstitle h2 {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #0D285B;
+}
+
+.search-department {
+    width: 100%;
+    max-width: 442px;
+    background: #EAEFF4;
+    border: 2px solid #039ED6;
+    border-radius: 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search-department input {
+    width: 100%;
+    padding: 20px;
+    width: 100%;
+    border: none;
+
+    font-family: 'Gilroy-Light';
+    font-size: 20px;
+    color: rgba(58, 83, 129, 0.8);
+}
+
+.search-department input:focus {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.departmentsbutton {
+    padding: 0 20px;
+}
+
+.departmentsbutton button {
+    cursor: pointer;
+}
+
+.search-department input::placeholder {
+    font-family: 'Gilroy-Light';
+    font-size: 20px;
+    color: rgba(58, 83, 129, 0.8);
+
+}
+
+.departments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.departments-list1 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.departments-list2 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.departmentsmain-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.departmentslist {
+    padding: 24px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #0D285B;
+    transition: 0.3s;
+}
+
+.departmentslist p {
+    font-family: 'Gilroy-Medium';
+    font-size: 28px;
+    color: #0D285B;
+}
+
+
+
+.departmentsline {
+    width: 100%;
+    border: 2px solid #0D285B;
+}
+.departments a{
+  transition: 0.4s;
+}
+.departments a:hover {
+  box-shadow: inset 0 -5.25em 0 0 #0D285B;
+}
+
+.departments a:hover p{
+  color: #EBEBEB;
+}
+.departments a:hover svg path{
+    fill: #EBEBEB;
+}
+
+@media (max-width:1024px) {
+    .search-department input::placeholder {
+        font-size: 16px;
+    }
+    .search-department input {
+        padding: 16px;
+        font-size: 16px;
+    }
+    .search-department svg{
+        width: 20px;
+    }
+    .departments {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .departments-list1 {
+        width: 100%;
+    }
+    .departments-list2 {
+        width: 100%;
+    }
+
+    .departmentslist {
+        padding: 20px 12px;
+    }
+    
+    .departmentslist p {
+        font-size: 24px;
+    }
+    .departmentslist svg{
+        width: 20px;
+    }
+    
+
+}
+
+@media (max-width:900px) {
+    .departmentstitle-search {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .search-department {
+        max-width: none;
+    }
+}
+
+@media (max-width:900px) {
+    .departmentstitle h2 {
+        font-size: 36px;
+    }
+}
+
+/* DOCTORS */
+
+.doctorsMain-wraper {
+    width: 85%;
+    margin: 108px auto 163px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+}
+
+.doctorstitle-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.doctorstitle {
+    width: 70%;
+}
+
+.doctorstitle h2 {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #0D285B;
+}
+.doctorssearches {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+.search-doctor {
+    width: 100%;
+    max-width: 442px;
+    background: #EAEFF4;
+    border: 2px solid #039ED6;
+    border-radius: 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.choose-department {
+    width: 100%;
+    max-width: 442px;
+    background: #EAEFF4;
+    border: 2px solid #039ED6;
+    border-radius: 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choose-department select {
+    cursor: pointer;
+    width: 100%;
+    padding: 20px;
+    width: 100%;
+    border: none;
+
+    font-family: 'Gilroy-Light';
+    font-size: 20px;
+    color: rgba(58, 83, 129, 0.8);
+
+    appearance: none;
+}
+
+.choose-department select:focus {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.search-doctor input {
+    width: 100%;
+    padding: 20px;
+    width: 100%;
+    border: none;
+
+    font-family: 'Gilroy-Light';
+    font-size: 20px;
+    color: rgba(58, 83, 129, 0.8);
+}
+
+.search-doctor input:focus {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.doctorsbutton {
+    padding: 0 20px;
+}
+.doctorsbutton button {
+    cursor: pointer;
+}
+
+.search-doctor input::placeholder {
+    font-family: 'Gilroy-Light';
+    font-size: 20px;
+    color: rgba(58, 83, 129, 0.8);
+
+}
+
+.doctors-wraper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 40px;
+    margin-top: 52px;
+}
+
+.doctors-info {
+    width: 100%;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.doctors img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.doctors-info h4 {
+    font-family: 'Gilroy-SemiBold';
+    font-size: 20px;
+    color: rgba(13, 40, 91, 0.9);
+}
+.doctors-info p {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    color: #3C5481;
+
+}
+.doctors-info button {
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #039ED6;
+    padding: 12px 0;
+    border-radius: 24px;
+    color: #FFFFFF;
+    transition: 0.3s;
+
+    background-size: 300% 100%;
+
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.doctors-info button:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.doctors-info button:focus {
+    outline: none;
+}
+
+@media (max-width: 1430px) {
+    .doctors-wraper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+ 
+@media (max-width: 1024px) {
+    .doctorstitle h2 {
+       text-align: center;
+    }
+    .choose-department select {
+        padding: 16px;
+    }
+    .choose-department option {
+        padding: 16px;
+    }
+    .search-doctor input {
+        padding: 16px;
+    }
+    .doctors-wraper {
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+        margin: 52px auto auto auto;
+    }
+    .doctorssearches {
+        flex-direction: column;
+    }
+    .choose-department {
+        width: 100%;
+        max-width: none;
+    }
+    .doctorstitle-search {
+        flex-direction: column;
+        gap: 28px;
+    }
+    .search-doctor  {
+        max-width: none;
+    }
+    .doctors-wraper {
+        width: 90%;
+        grid-template-columns: 1fr;
+        margin: 52px auto auto auto;
+    }
+}
+
+@media  (max-width: 720px) {
+    .doctorsMain-wraper {
+        gap: 40px;
+    }
+    .doctorstitle h2 {
+        font-size: 36px;
+    }
+    .choose-department select {
+        padding: 12px;
+        font-size: 16px;
+    }
+    .search-doctor input {
+        padding: 12px;
+        font-size: 16px;
+    }
+    .search-doctor input::placeholder {
+        font-size: 16px;  
+    }
+    .search-doctor svg {
+        width: 20px;
+    }
+}
+@media (max-width:580px) {
+    .doctors-info {
+        padding: 20px 12px;
+    }
+    .doctors-info h4 {
+        font-size: 16px;
+    }
+    .doctors-info p {
+        font-family: 'Gilroy-Medium';
+        font-size: 12px;
+        color: #3C5481;
+    }
+    .doctors-info button {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+    
+}
+@media  (max-width: 480px) {
+    .doctors-info {
+        padding: 20px 8px;
+    }
+    .doctorstitle h2 {
+        font-size: 32px;
+    }
+    .choose-department select {
+        padding: 12px;
+        font-size: 12px;
+    }
+    .search-doctor input {
+        padding: 12px;
+        font-size: 12px;
+    }
+    .search-doctor input::placeholder {
+        font-size: 12px;  
+    }
+    .search-doctor svg {
+        width: 16px;
+    }
+}
+@media (max-width:392px) {
+    .doctors-info button {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+    
+}
+
+/* CONTACT US */
+
+.contactUsmain-wraper {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    margin: 108px auto 288px auto;
+}
+
+.contactus-wraper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    margin: auto;
+}
+.contactus-wraper h2{
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #0D285B;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.name-lastname, .mail-phone , .date-datetime{
+    display: flex;
+    gap: 44px;
+}
+
+.name-lastname div, .mail-phone div, .date-datetime div, .message div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.name-lastname input, .mail-phone input, .date-datetime input{
+    border: 1px solid rgba(13, 40, 91, 0.4);
+    border-radius: 8px;
+    width: 100%;
+    height: 52px;
+    padding: 0 24px 0 16px;
+    color: rgb(60, 84, 129);
+    
+}
+
+.message textarea {
+    border: 1px solid rgba(13, 40, 91, 0.4);
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px 24px 0 16px;
+    color: rgb(60, 84, 129);
+}
+.message textarea::placeholder {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(60, 84, 129, 0.64);
+}
+
+.contactus-wraper h4{
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #3C5481;
+}
+
+input::placeholder {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(60, 84, 129, 0.64);
+}
+
+.contactUs-button {
+    margin: auto;
+}
+.contactUs-button button{
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 96px;
+    border: 2px solid #039ED6;
+    border-radius: 48px;
+
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+
+    color: #039ED6;
+    transition: 0.4s;
+}
+
+.contactUs-button button:hover>svg path {
+    fill: #FFFFFF;
+    background-color: #039ED6;
+}
+
+
+
+
+.contactUs-button button:hover {
+    color: #FFFFFF;
+    background-color: #039ED6;
+}
+
+@media (max-width: 900px) {
+    .name-lastname, .mail-phone , .date-datetime{
+        flex-direction: column;
+    }
+}
+@media (max-width: 720px) {
+    .contactus-wraper h2 {
+        font-size: 40px;
+    }
+    .contactus-wraper h4 {
+        font-size: 16px;
+    }
+    input::placeholder {
+        font-size: 12px;
+    }
+    .message textarea::placeholder {
+        font-size: 12px;
+    }
+    .contactUs-button button{
+        padding: 12px 76px;
+        font-size: 16px;
+    }
+    .contactUs-button svg {
+        width: 16px;
+        height: 16px;
+    }
+
+}
+
+/* CAREER */
+
+.careerMain-wraper {
+    width: 85%;
+    margin: 108px auto 163px auto;
+}
+.careertitle-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.careertitle h2 {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #0D285B;
+}
+
+.search-career {
+    width: 100%;
+    max-width: 554px;
+    background: #EAEFF4;
+    border: 2px solid #039ED6;
+    border-radius: 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search-career input {
+    width: 100%;
+    padding: 20px;
+    width: 100%;
+    border: none;
+
+    font-family: 'Gilroy-Light';
+    font-size: 20px;
+    color: rgba(58, 83, 129, 0.8);
+}
+
+.search-career input:focus {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.careerbutton {
+    padding: 0 20px;
+}
+
+.careerbutton button {
+    cursor: pointer;
+}
+
+.search-career input::placeholder {
+    font-family: 'Gilroy-Light';
+    font-size: 20px;
+    color: rgba(58, 83, 129, 0.8);
+
+}
+
+.career-list {
+    width: 80%;
+    margin: 140px auto auto auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.careerlist {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.careerlist-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.careerline {
+    width: 100%;
+    border: 2px solid #0D285B;
+    background-color: #0D285B;
+}
+
+.careerlist-info p{
+    font-family: 'Gilroy-Medium';
+    font-size: 24px;
+    color: #0D285B;
+
+}
+
+.careerlist-info button {
+    cursor: pointer;
+
+    background: #0C2D6C;
+    border-radius: 12px;
+    font-family: 'Gilroy-SemiBold';
+
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    padding: 16px 40px;
+    
+    position: relative;
+    z-index: 0;
+}
+.careerlist-info button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.careerlist-info button:active {
+    color: #000
+}
+
+.careerlist-info button:active:after {
+    background: transparent;
+}
+
+.careerlist-info button:hover:before {
+    opacity: 1;
+}
+
+.careerlist-info button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0C2D6C;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media (max-width: 1500px) {
+    .search-career {
+        max-width: 490px;
+    }
+    .careertitle h2 {
+        font-size: 40px;
+    }
+    .search-career input{
+        font-size: 16px;
+    }
+    .search-career input::placeholder {
+        font-size: 16px;  
+    }
+}
+
+@media (max-width: 1265px) {
+    .careertitle-search {
+        flex-direction: column;
+        gap: 28px;
+    }
+    .search-career {
+        width: 100%;
+        max-width: 80%;
+    }
+}
+@media (max-width: 1024px) {
+    .career-list {
+        margin: 120px auto auto auto;
+    }
+    .careertitle-search {
+        gap: 32px;
+    }
+    .careertitle-search h2{
+        text-align: center;
+    }
+}
+
+@media (max-width:800px){
+    .careerlist-info p{
+        font-size: 20px; 
+    }
+    
+    .careerlist-info button {
+        font-size: 18px;
+        padding: 12px 36px;
+        
+    }
+}
+
+@media (max-width: 670px) {
+    .careerlist {
+        gap: 16px;
+    }
+
+    .careerlist-info p{
+        font-size: 16px; 
+        max-width: 154px;
+    }
+    
+    .careerlist-info button {
+        font-size: 14px;
+        padding: 8px 32px;
+        
+    }
+    .career-list {
+        margin: 104px auto auto auto;
+    }
+    .careertitle-search {
+        align-items: center;
+        gap: 32px;
+    }
+    .careertitle-search h2{
+        font-size: 32px;
+    }
+    .search-career input {
+        padding: 16px;
+        font-size: 12px;
+    }
+    .search-career svg {
+        width: 16px;
+    }
+    .search-career input::placeholder {
+        font-size: 12px;  
+    }
+}
+@media (max-width: 540px) {
+    .careertitle-search h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .search-career input {
+        padding: 12px;
+        font-size: 12px;
+    }
+    .search-career svg {
+        width: 16px;
+    }
+    .search-career input::placeholder {
+        font-size: 12px;  
+    }
+}
+
+
+@media (max-width: 430px) {
+
+    .careerlist {
+        gap: 16px;
+    }
+
+    .careerlist-info p{
+        font-size: 12px; 
+        max-width: 121px;
+    }
+    
+    .careerlist-info button {
+        font-size: 10px;
+        padding: 6px 28px;
+        
+    }
+    .careerline {
+        width: 100%;
+        border: 1px solid #0D285B;
+        background-color: #0D285B;
+    }
+}
+
+/* CAREER DEPARTMENT*/
+
+#popBlur {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(3, 158, 214, 0.5);
+    z-index: 20;
+    opacity: 0;
+    backdrop-filter: blur(77px);
+    pointer-events: none;
+    user-select: none;
+
+    transition: opacity 0.5s ease-in-out;
+}
+
+.careerDepMainWraper {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 120px 0;
+}
+
+.careerDepMainWraper h2{
+    font-family: 'Gilroy-SemiBold';
+    font-size: 40px;
+
+    color: #0D285B;
+}
+
+.careerDepMainWraper p {
+    font-family: 'Arial-GEO';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #061A40;
+}
+.careerapply-button {
+    margin: auto;
+}
+.careerapply{
+    cursor: pointer;
+
+    background: #0C2D6C;
+    border-radius: 12px;
+    font-family: 'Gilroy-SemiBold';
+
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    padding: 16px 40px;
+    
+    position: relative;
+    z-index: 0;
+}
+.careerapply:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+.careerapply:active:after {
+    background: transparent;
+}
+
+.careerapply:hover:before {
+    opacity: 1;
+}
+
+.careerapply:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0C2D6C;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* POP UP */
+
+.popUp {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 44px;
+
+    position: absolute;
+    top: -200%;
+    left: 50%;
+    z-index: 20;
+
+    transform: translate(-50%, -50%);
+
+    background: rgba(255, 255, 255, 1);
+    border-radius: 24px;
+
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.popUp-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.popUp-Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popUp-Title h2 {
+    font-family: 'Gilroy-SemiBold';
+    font-size: 40px;
+    color: #0D285B;
+}
+
+.popUp-Title button {
+    cursor: pointer;
+}
+.popUp-Title button svg {
+    display: flex;
+    padding-top: 5px;
+}
+
+.careerinput-div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.careerinput-div p {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3C5481;
+}
+
+.careerinput-div input {
+    width: 100%;
+    border: 1px solid rgba(13, 40, 91, 0.4);
+    border-radius: 8px;
+    padding: 16px;
+
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-size: 16px;
+
+    color: rgba(60, 84, 129, 0.64);
+}
+
+.careerinput-div input::placeholder {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+
+    color: rgba(60, 84, 129, 0.64);
+
+}
+.careercheckboxs-div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.careercheckbox-div label {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+
+    color: rgba(60, 84, 129, 0.9);
+}
+.careercheckbox-input {
+    cursor: pointer;
+}
+
+.careerinputs-button {
+    margin: auto;
+}
+.careerinputs-button button{
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 96px;
+    border: 2px solid #039ED6;
+    border-radius: 48px;
+
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+
+    color: #039ED6;
+    transition: 0.4s;
+}
+
+.careerinputs-button button:hover>svg path {
+    fill: #FFFFFF;
+    background-color: #039ED6;
+}
+
+
+
+
+.careerinputs-button button:hover {
+    color: #FFFFFF;
+    background-color: #039ED6;
+}
+
+@media (max-width: 1024px) {
+    .popUp {
+        width: 80%;
+        transform: translate(-50%, -28%);
+    }
+}
+
+@media (max-width: 720px) {
+    .popUp-Title h2 {
+        font-size: 28px;
+    }
+    .popUp-Title svg {
+        width: 16px;
+    }
+    .careerinput-div p {
+        font-size: 16px;
+    }
+    .popUp-inputs input {
+        font-size: 14px;
+    }
+    .popUp-inputs input::placeholder{
+        font-size: 16px;
+    }
+
+    .careerinputs-button button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 14px 72px;
+        font-size: 16px;
+    }
+    .popUp-Title svg {
+        width: 16px;
+    }
+}
+
+@media (max-width: 580px) {
+    .popUp {
+        transform: translate(-50%, 12%);
+    }
+    .popUp-inputs input {
+        padding: 12px;
+    }
+    .popUp-inputs input::placeholder{
+        font-size: 14px;
+    } 
+}
+
+/* DIRECTOR PAGE */
+
+.directormainWraper {   
+    width: 85%;
+    display: flex;
+    gap: 52px;
+    margin: 116px auto;
+}
+
+.directormainWraper img {
+    width: 100%;
+}
+
+.directorinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+.directorinfo p {
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    word-spacing: 2px;
+    line-height: 19px;
+    color: #3C5481;
+}
+.directorabout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.directorabout p {
+    max-width: 662px;
+}
+.directortitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.directortitle svg path {
+    transition: all 0.3s ease-in-out;
+}
+.directortitle svg:hover > path {
+    fill: #039ED6;
+}
+.directorname-pos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.directorname-pos h1 {
+    font-family: 'Gilroy-SemiBold';
+    font-size: 48px;
+    color: rgba(13, 40, 91, 0.9);
+}
+
+.directorname-pos h4 {   
+    font-family: 'Gilroy-Medium';
+    font-size: 24px;
+    color: #3C5481;
+}
+
+.directorexperience {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.directorexperience p {
+    max-width: 558px;
+}
+.directorexperience h2 {
+    font-family: 'Gilroy-SemiBold';
+    font-size: 32px;
+    line-height: 38px;
+
+    color: rgba(13, 40, 91, 0.9);
+}
+.directorexperience h2:before {
+    content: '';
+    display: flex;
+    border: 1px solid #253D6B;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.directorexperience-about {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@media (max-width: 1366px) {
+    .directormainWraper {
+        flex-direction: column;
+    }
+    .directormainWraper img {
+       margin: auto;
+    }
+    .dali-image {
+        margin: auto;
+    }
+    .directorinfo {
+        margin: auto;
+    }
+    .directorexperience h2:before {
+        max-width: 700px;;
+    }
+    
+}
+
+@media (max-width: 520px) {
+    .directorname-pos h1 {
+        font-size: 36px;
+    }
+    .directorname-pos h4 {   
+        font-size: 20px;
+    }
+}
 
 /* FOOTER */
 
