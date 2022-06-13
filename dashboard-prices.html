@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/dashboard-prices.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Dashboard</title>
 </head>
 
 <body>
     <main>
-        <div class="mainWraper">
+        <div class="dashboardmainWraper">
             <div class="dashboard-navWraper">
                 <nav class="dashboard-nav">
                     <h2>
@@ -20,27 +19,27 @@
                     </h2>
                     <ul>
                         <li>
-                            <a href="dashboard-doctors.html">
+                            <a href="dashboard-doctors.html" class="nonActive-nav">
                                 Doctors
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-vacancies.html">
+                            <a href="dashboard-vacancies.html" class="nonActive-nav">
                                 Vacancies
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" class="nonActive-nav">
                                 Services
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-news.html">
+                            <a href="dashboard-news.html" class="nonActive-nav" >
                                 News
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-prices.html">
+                            <a href="dashboard-prices.html" class="active-nav">
                                 Prices
                             </a>
                         </li>
@@ -50,13 +49,13 @@
             </div>
             <div class="control-panel">
                 <div class="title">
-                    <h2>Prices</h2>
+                    <h2>Price</h2>
                     <div>
-                        <a href="dashboard-pricesAdd.html">
-                            <button> 
+                        <a href="dashboard-doctorsAdd.html">
+                            <button>
                                 <p>
-                                    Add 
-                                </p>                           
+                                    Add
+                                </p>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path
                                         d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z" />
@@ -65,26 +64,36 @@
                         </a>
                     </div>
                 </div>
-                <div class="dashboard-wraper">
-                    <div class="dashboard">
-                        <div class="sections">
-                            <h3>Lab Title</h3>
-                            <p>Thyrotropic hormone </p>
-                        </div>
-                        <div class="sections">
-                            <h3>Price</h3>
-                            <p>151₾</p>
-                        </div>
-                    </div>
-                    <div class="buttons">
-                        <a href="#">
-                            <button class="edit"> Edit </button>
-                        </a>
-                        <a href="#">
-                            <button class="delete"> Delete </button>
-                        </a>
-                    </div>
-                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Rank
+                            </th>
+                            <th>
+                                Lab Title
+                            </th>
+                            <th>
+                                Price
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Thyrotropic hormone </td>
+                            <td>121$</td>
+                            <td class="buttons">
+                                <a href="#">
+                                    <button class="edit"> Edit </button>
+                                </a>
+                                <a href="#">
+                                    <button class="delete"> Delete </button>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>

@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/dashboard-doctors.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Dashboard</title>
 </head>
 
 <body>
     <main>
-        <div class="mainWraper">
+        <div class="dashboardmainWraper">
             <div class="dashboard-navWraper">
                 <nav class="dashboard-nav">
                     <h2>
@@ -20,27 +19,27 @@
                     </h2>
                     <ul>
                         <li>
-                            <a href="dashboard-doctors.html">
+                            <a href="dashboard-doctors.html" class="active-nav">
                                 Doctors
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-vacancies.html">
+                            <a href="dashboard-vacancies.html" class="nonActive-nav">
                                 Vacancies
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" class="nonActive-nav">
                                 Services
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-news.html">
+                            <a href="dashboard-news.html" class="nonActive-nav">
                                 News
                             </a>
                         </li>
                         <li>
-                            <a href="dashboard-prices.html">
+                            <a href="dashboard-prices.html" class="nonActive-nav">
                                 Prices
                             </a>
                         </li>
@@ -65,42 +64,52 @@
                         </a>
                     </div>
                 </div>
-                <div class="dashboard-wraper">
-                    <div class="dashboard">
-                        <div class="sections">
-                            <h3>Name</h3>
-                            <p>Dali Davitadze</p>
-                        </div>
-                        <div class="sections">
-                            <h3>Position</h3>
-                            <p>Director</p>
-                        </div>
-                        <div class="sections">
-                            <h3>Image</h3>
-                            <img src="image-doctors/doctor-img.png" alt="doctors">
-                        </div>
-                        <div class="sections">
-                            <h3>About</h3>
-                            <p>Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium
+                <table>
+                    <thead>
+                        <tr>
+                             <th>
+                                Rank
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Position
+                            </th>
+                            <th>
+                                Image
+                            </th>
+                            <th>
+                                About
+                            </th>
+                            <th>
+                                Experience
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dali Davitadze</td>
+                            <td>Director</td>
+                            <td><img src="image-doctors/doctor-img.png" alt="doctors"></td>
+                            <td>Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium
                                 nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam, vel varius sapien
-                                suscipit eget....</p>
-                        </div>
-                        <div class="sections">
-                            <h3>Experience</h3>
-                            <p>Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium
+                                suscipit eget....</td>
+                            <td>Donec vitae mi vulputate, suscipit urna in, malesuada nisl. Pellentesque laoreet pretium
                                 nisl, et pulvinar massa eleifend sed. Curabitur maximus mollis diam, vel varius sapien
-                                suscipit eget....</p>
-                        </div>
-                    </div>
-                    <div class="buttons">
-                        <a href="#">
-                            <button class="edit"> Edit </button>
-                        </a>
-                        <a href="#">
-                            <button class="delete"> Delete </button>
-                        </a>
-                    </div>
-                </div>
+                                suscipit eget....</td>
+                            <td class="buttons">
+                                <a href="#">
+                                    <button class="edit"> Edit </button>
+                                </a>
+                                <a href="#">
+                                    <button class="delete"> Delete </button>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>
